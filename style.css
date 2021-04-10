@@ -1,0 +1,78 @@
+/* === Helper Color Styles === 
+.quote p {
+    background-color: red;
+}
+.author small {
+    background-color: aqua;
+}
+*/
+/* === Basic Styles === */
+body {
+    width: 100vw;
+    height: 100vw;
+    text-align: center;
+    display: relative;
+    z-index: 1;
+}
+body::before { /* Transparent Background */
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;  
+  opacity: .6; 
+  z-index: -1;
+  background: url('https://cdn.pixabay.com/photo/2015/09/02/12/48/person-918684_960_720.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.wrapper {  
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+/* === Text Styles === */
+.quote p {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.5625rem;
+    line-height: 2.4rem;
+    padding: 10px 10px;
+    letter-spacing: 0.10rem;
+    color: black;
+    font-weight: 600;
+}
+.author small {
+    display: block;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.25rem;
+    margin-top: 5px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+/* === Display Styles === */
+@media (min-width: 600px) {
+    body::before {
+        opacity: unset;
+    }
+   .wrapper {
+       top: 8%;
+   }
+   /* === TEXT STYLES === */
+   .quote p {
+       font-size: 2.1875rem;
+       font-weight: unset;
+   }
+   .author small {
+       font-size: 1.5625rem;
+       font-weight: unset;
+       margin-top: 30px;
+   }
+   @media (min-width: 1024px) {
+       
+   }
+   
+}
