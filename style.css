@@ -70,9 +70,22 @@ body::before { /* Transparent Background */
        font-size: 1.5625rem;
        font-weight: unset;
        margin-top: 30px;
-   }
-   @media (min-width: 1024px) {
-       
-   }
-   
+   } 
+}
+@media (min-width: 1024px) {
+    body::before {
+        opacity: 0.8;
+    }
+    .wrapper {
+        top: 15%;
+       }
+       .quote p {
+           font-size: 3.125rem;
+           padding: 30px 30px;
+           line-height: 4rem;
+           font-weight: unset;
+       }
+       .author small {
+           font-size: 1.875rem;
+       }
 }
