@@ -53,16 +53,8 @@ body::before { /* Transparent Background */
     padding: 10px 20px;
     font-weight: 600;
 }
-/* === Language Styles === */
-li {
-    display: inline-block;
+/* === Footer Styles === */
 
-}
-li i {
-    color: black;
-    padding-left: 50px;
-    padding-right: 50px;
-}
 /* === Display Styles === */
 @media (min-width: 600px) {
     body::before {
